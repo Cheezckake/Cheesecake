@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кондитерская</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header class="header">
+  <div class="header__logo">
+    <img src="images/logo.jpg" alt="Pink Cake" class="header__logo-img">
+  </div>
+  <nav class="header__nav">
+  <a href="#catalog" class="header__link">Каталог</a>
+  <a href="#contacts" class="header__link">Контакты</a>
+  <div class="header__cart">
+    <button class="cart__btn">
+      <img src="images/cart-icon.svg" alt="Корзина" class="cart__icon">
+      <span class="cart__count">0</span>
+    </button>
+  </div>
+</nav>
+</header>
+<section class="hero" id="hero">
+    <div class="container hero__container">
+
+      <!-- Первый экран -->
+      <div class="hero__content">
+        <!-- Блок с заголовком -->
+        <div class="hero__info">
+          <h1 class="hero__title">Розовый чизкейк</h1>
+          <p class="hero__subtitle">Доставка кондитерской продукции в Санкт-Петербурге</p>
+        </div>
+
+        <!--  блок Популярные товары -->
+        <div class="popular" >
+          <h2 class="popular__title">Популярные товары</h2>
+          <p class="popular__subtitle">Доставка кондитерской продукции</p>
+          <a href="#catalog" class="popular__btn">Перейти в каталог</a>
+
+          <!-- Карточка товара -->
+          <div class="popular__slider">
+            <div class="catalog__card" data-id="9" data-name="Шоколад белый" data-price="299" data-image="images/card1.png">
+              <div class="popular__card-img">
+      
+              </div>
+              <h3 class="catalog__card-title">Шоколад белый 100 г</h3>
+              <p class="catalog__card-desc">299 ₽</p>
+              <button class="catalog__card-btn">
+                <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+              </button>
+            </div>
+            <!-- Элементы управления слайдером -->
+            <div class="slider-controls">
+          <button class="slider-arrow prev">←</button>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="slider-arrow next">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок О нас -->
+<section class="about" id="about">
+  <div class="container about__container">
+    <!-- Первый ряд -->
+    <div class="about__row about__row--first">
+      <div class="about__card about__card--large">
+        <h2 class="about__card-title about__card-title--large">О нас</h2>
+        <p class="about__card-subtitle about__card-subtitle--large">Я занимаюсь профессиональной выпечкой тортов уже более 15 лет</p>
+        <p class="about__card-desc about__card-desc--large">На своем опыте знаю, в момент процесса выпечки всегда не вовремя заканчивается нужный краситель, ломается фигурка, рассыпается смесь. Где кондитеру найти товары поздним вечером, ночью или ранним утром? У нас!</p>
+      </div>
+    </div>
+
+    <!-- Второй ряд -->
+<div class="about__row about__row--second">
+
+  <div class="about__card">
+    <h3 class="about__card-title">График работы</h3>
+    <div class="about__card-bottom">
+      <p class="about__card-subtitle">Работаем круглосуточно</p>
+      <p class="about__card-desc">Самовывоз 24 часа</p>
+    </div>
+  </div>
+
+  <div class="about__card">
+    <h3 class="about__card-title">Доставка</h3>
+    <div class="about__card-bottom">
+      <p class="about__card-subtitle">По городу бесплатно</p>
+      <p class="about__card-desc">При заказе от 3000₽</p>
+    </div>
+  </div>
+
+  <div class="about__card">
+    <h3 class="about__card-title">Ассортимент</h3>
+    <div class="about__card-bottom">
+      <p class="about__card-subtitle">Более 500 товаров</p>
+      <p class="about__card-desc">Все для кондитера</p>
+    </div>
+  </div>
+
+  <div class="about__card">
+    <h3 class="about__card-title">Качество</h3>
+    <div class="about__card-bottom">
+      <p class="about__card-subtitle">Только проверенные бренды</p>
+      <p class="about__card-desc">Сертифицированная продукция</p>
+    </div>
+  </div>
+
+  <div class="about__card">
+    <h3 class="about__card-title">Скидки</h3>
+    <div class="about__card-bottom">
+      <p class="about__card-subtitle">Постоянным клиентам</p>
+      <p class="about__card-desc">Накопительная система</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Категории -->
+<section class="categories" id="categories">
+  <!-- Первый ряд -->
+  <div class="categories__row">
+    <div class="categories__card">
+      <div class="categories__card-content">
+        <h2 class="categories__card-title">Инвентарь</h2>
+        <p class="categories__card-subtitle">Профессиональный инструмент для кондитеров</p>
+        <button class="categories__card-btn">Перейти в каталог</button>
+      </div>
+      <div class="categories__card-image">
+  <img src="images/category-1.jpg" alt="Инвентарь" class="categories__img">
+</div>
+    </div>
+
+    <div class="categories__card">
+      <div class="categories__card-content">
+        <h2 class="categories__card-title">Ингредиенты и полуфабрикаты</h2>
+        <p class="categories__card-subtitle">Высококачественные продукты для выпечки</p>
+        <button class="categories__card-btn">Перейти в каталог</button>
+      </div>
+      <div class="categories__card-image">
+  <img src="images/category-2.jpg" alt="Инвентарь" class="categories__img">
+</div>
+    </div>
+  </div>
+
+  <!-- Второй ряд -->
+  <div class="categories__row">
+    <div class="categories__card">
+      <div class="categories__card-content">
+        <h2 class="categories__card-title">Декор</h2>
+        <p class="categories__card-subtitle">Украшения для тортов и десертов</p>
+        <button class="categories__card-btn">Перейти в каталог</button>
+      </div>
+      <div class="categories__card-image">
+  <img src="images/category-3.jpg" alt="Инвентарь" class="categories__img">
+</div>
+    </div>
+
+    <div class="categories__card">
+      <div class="categories__card-content">
+        <h2 class="categories__card-title">Упаковка</h2>
+        <p class="categories__card-subtitle">Коробки, подложки, декор для упаковки</p>
+        <button class="categories__card-btn">Перейти в каталог</button>
+      </div>
+      <div class="categories__card-image">
+  <img src="images/category-4.jpg" alt="Инвентарь" class="categories__img">
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- Каталог -->
+<section class="catalog" id="catalog">
+  <div class="container catalog__container">
+    <h2 class="catalog__title">Каталог</h2>
+
+    <!-- Кнопки фильтров -->
+    <div class="catalog__tabs">
+      <button class="catalog__tab catalog__tab--active">Все товары</button>
+      <button class="catalog__tab">Инвентарь</button>
+      <button class="catalog__tab">Ингредиенты</button>
+      <button class="catalog__tab">Декор</button>
+      <button class="catalog__tab">Упаковка</button>
+    </div>
+
+    <!-- Карточки товаров -->
+    <div class="catalog__grid">
+      <!-- Карточка 1 -->
+        <div class="catalog__card" data-id="1" data-name="Шпатель металлический" data-price="259" data-image="images/cat1.png">
+          <div class="catalog__card-img">
+            <img src="images/cat1.png" alt="Шпатель металлический" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">259 ₽</h3>
+          <p class="catalog__card-title">Шпатель металлический с ручкой и разметкой 20 см</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="catalog__card" data-id="2" data-name="Лопатка кондитерская" data-price="454" data-image="images/cat2.png">
+          <div class="catalog__card-img">
+            <img src="images/cat2.png" alt="Лопатка кондитерская" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">454 ₽</h3>
+          <p class="catalog__card-title">Лопатка кондитерская (палетта) изогнутая</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="catalog__card" data-id="3" data-name="Термометр электронный" data-price="377" data-image="images/cat3.png">
+          <div class="catalog__card-img">
+            <img src="images/cat3.png" alt="Термометр электронный" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">377 ₽</h3>
+          <p class="catalog__card-title">Термометр электронный (термощуп) в тубе</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="catalog__card" data-id="4" data-name="Просеиватель для муки" data-price="350" data-image="images/cat4.png">
+          <div class="catalog__card-img">
+            <img src="images/cat4.png" alt="Просеиватель для муки" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">350 ₽</h3>
+          <p class="catalog__card-title">Просеиватель для муки металлический 250 мл</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+        <!-- Карточка 5 -->
+        <div class="catalog__card" data-id="5" data-name="Пирометр цифровой" data-price="702" data-image="images/cat5.png">
+          <div class="catalog__card-img">
+            <img src="images/cat5.png" alt="Пирометр цифровой" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">702 ₽</h3>
+          <p class="catalog__card-title">Пирометр цифровой Бесконтактный</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+        <!-- Карточка 6 -->
+        <div class="catalog__card" data-id="6" data-name="Форма для выпечки" data-price="416" data-image="images/cat6.png">
+          <div class="catalog__card-img">
+            <img src="images/cat6.png" alt="Форма для выпечки" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">416 ₽</h3>
+          <p class="catalog__card-title">Форма для выпечки, сердце 21*19 см h=5 см</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+        <!-- Карточка 7 -->
+        <div class="catalog__card" data-id="7" data-name="Набор кондитерских насадок" data-price="391" data-image="images/cat7.png">
+          <div class="catalog__card-img">
+            <img src="images/cat7.png" alt="Набор кондитерских насадок" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">391 ₽</h3>
+          <p class="catalog__card-title">Набор кондитерских насадок Ассорти 12 шт.</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+        <!-- Карточка 8 -->
+        <div class="catalog__card" data-id="8" data-name="Решетка для глазирования" data-price="354" data-image="images/cat8.png">
+          <div class="catalog__card-img">
+            <img src="images/cat8.png" alt="Решетка для глазирования" class="catalog__card-image">
+          </div>
+          <h3 class="catalog__card-desc">354 ₽</h3>
+          <p class="catalog__card-title">Решетка для глазирования Прямоугольная 27*25 см</p>
+          <button class="catalog__card-btn">
+            <img src="images/cart-icon-small.svg" alt="В корзину" class="cart-icon">
+          </button>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Корзина -->
+<div class="cart-popup">
+  <div class="cart-popup__overlay"></div>
+  <div class="cart-popup__content">
+    <div class="cart-popup__header">
+      <h3 class="cart-popup__title">Корзина</h3>
+      <button class="cart-popup__close">×</button>
+    </div>
+    <div class="cart-popup__items">
+      <p class="cart-popup__empty">Корзина пуста</p>
+    </div>
+    <div class="cart-popup__footer">
+      <div class="cart-popup__total">
+        <span>Итого:</span>
+        <span class="cart-popup__total-sum">0 ₽</span>
+      </div>
+      <button class="cart-popup__checkout">Оформить заказ</button>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно оформления заказа -->
+<div class="order-modal">
+  <div class="order-modal__overlay"></div>
+  <div class="order-modal__content">
+    <h3 class="order-modal__title">Оформление заказа</h3>
+    <form id="orderForm">
+      <div class="order-modal__form-group">
+        <label for="name">Имя *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="order-modal__form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="order-modal__form-group">
+        <label for="address">Адрес доставки *</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="order-modal__actions">
+        <button type="button" class="order-modal__btn order-modal__btn--cancel" id="cancelOrderBtn">Отмена</button>
+        <button type="submit" class="order-modal__btn order-modal__btn--submit">Заказать</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Блок Специальное предложение -->
+<section class="special" id="special">
+  <div class="container special__container">
+    <div class="special__card">
+      <h2 class="special__title">Специальное предложение</h2>
+      <p class="special__subtitle">Бесплатная доставка курьерской службой по СПБ и ЛО *</p>
+      <p class="special__desc">*Действует только 24 часа</p>
+    </div>
+  </div>
+</section>
+<section class="request" id="request">
+  <div class="container request__container">
+    <div class="request__content">
+      <h2 class="request__title">Оставить заявку</h2>
+      <p class="request__subtitle">Заполните форму, наш специалист свяжется с Вами и проконсультирует по всем возникающим вопросам</p>
+      
+      <form class="request__form">
+        <input type="text" class="request__input" placeholder="Ваше имя" required>
+        <input type="tel" class="request__input" placeholder="Телефон" required>
+        <input type="email" class="request__input" placeholder="Email" required>
+        
+        <button type="submit" class="request__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Контакты -->
+<section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <h2 class="contacts__title">Контакты</h2>
+    
+    <div class="contacts__content">
+      <div class="contacts__info">
+        <h3 class="contacts__info-title">Центральный офис</h3>
+        
+        <div class="contacts__info-block">
+          <div class="contacts__info-left">
+            <h4 class="contacts__info-subtitle">Адрес</h4>
+            <p class="contacts__info-text">Россия, 191186, Санкт-Петербург, ул. Большая Морская, 18</p>
+            
+            <h4 class="contacts__info-subtitle">Телефон и почта</h4>
+            <p class="contacts__info-text">+7 812 111-22-33<br>info@pinkcake.ru</p>
+          </div>
+          
+          <div class="contacts__info-right">
+            <h4 class="contacts__info-subtitle">График работы</h4>
+            <p class="contacts__info-text">Пн - Пт: 9:00 - 17:00<br>Сб - Вс: по договоренности</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Геолокация -->
+      <div class="contacts__image">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32002.44500386431!2d30.48144635!3d59.91301120000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696254feb872e13%3A0xb773e55fc4a0b4b5!2z0JvQtdC00L7QstGL0Lkg0LTQstC-0YDQtdGG!5e0!3m2!1sru!2sru!4v1774791478652!5m2!1sru!2sru"
+        class="contacts__map"
+        frameborder="0"
+        allowfullscreen="true"
+        style="width: 100%; height: 100%; border: none;">
+      </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Футер -->
+<footer class="footer" id="footer">
+  <div class="container footer__container">
+    <div class="footer__logo">
+      Розовый чизкейк
+    </div>
+
+    <div class="footer__nav">
+  <h3 class="footer__nav-title">Разделы</h3>
+  <ul class="footer__nav-list">
+    <li><a href="#about" class="footer__nav-link">О нас</a></li>
+    <li><a href="#categories" class="footer__nav-link">Продукция</a></li>
+    <li><a href="#catalog" class="footer__nav-link">Каталог</a></li>
+    <li><a href="#contacts" class="footer__nav-link">Контакты</a></li>
+  </ul>
+</div>
+
+    <div class="footer__contacts">
+      <h3 class="footer__contacts-title">Контакты</h3>
+      <p class="footer__contacts-text">Адрес: Россия, 191186, Санкт-Петербург, ул. Большая Морская, 18</p>
+      <p class="footer__contacts-text">Телефон: +7 812 111-22-33</p>
+      <p class="footer__contacts-text">Почта: info@pinkcake.ru</p>
+      
+      <h3 class="footer__social-title">Соцсети</h3>
+      <div class="footer__social-icons">
+        <a href="#" class="footer__social-link">TG</a>
+        <a href="#" class="footer__social-link">VK</a>
+      </div>
+    </div>
+
+    <!-- Кнопка Вернуться наверх -->
+    <div class="footer__top">
+      <a href="#" class="footer__top-btn" style="text-decoration: none;">↑</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
